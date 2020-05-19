@@ -1,0 +1,45 @@
+.Navigate{
+    background-color: antiquewhite;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px;
+    justify-content: space-evenly;
+}
+
+.Navigate > p{
+    border-color: black;
+    border: 10pt;
+    border-radius: 10%;
+    font-family: myFirstFont ;
+    width: 200px;
+    height: 100px;
+    background-color: darkgray;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(font.ttf);
+  }
+  @font-face {
+    font-family: mySecondFont;
+    src: url(laisen.ttf);
+  }
+#motto{
+    font-family: mySecondFont;
+    font-size: 60px;
+}
+#title{
+    font-family: myFirstFont ;
+    font-size: 100px;
+}
+a:link{
+    font-size: 40px;
+    color: brown;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+    font-size: 50px;
+    text-decoration: solid;
+    font: bold;
+}
