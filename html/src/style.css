@@ -1,12 +1,26 @@
 .Navigate{
-    background-color: antiquewhite;
+    background-color: rgb(109, 110, 109);
     text-align: center;
     display: grid;
     font-family: myFirstFont ;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px;
     grid-template-rows: auto 200px;
     justify-content:space-evenly;
     gap: 100px;
+}
+.container{
+    background-color: rgb(78, 71, 71);
+    text-align: center;
+    display: grid;
+    font-family: myFirstFont ;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+    justify-content:space-evenly;
+    gap: 100px;
+}
+.friendsinfo{
+    background-color: rgb(140, 143, 143);
+    border-radius: 10%;
 }
 .whome{
     font-family: mySecondFont;
@@ -41,16 +55,17 @@
     font-family: mySecondFont;
     font-size: 60px;
 }
-#title{
+.title{
     font-family: myFirstFont ;
     font-size: 100px;
+    text-align: center;
 }
-a:link{
+.Navigate > p > a:link{
     font-size: 40px;
     color: brown;
     text-decoration: none;
 }
-a:hover{
+.Navigate > p > a:hover{
     color: blueviolet;
     font-size: 50px;
     text-decoration: solid;
@@ -59,6 +74,10 @@ a:hover{
 .mypic:hover{
     filter: opacity(60%);
     
+}
+.info:hover{
+    font-size: 110%;
+    font:bold;
 }
 .mypic{
     border-radius: 10%;
