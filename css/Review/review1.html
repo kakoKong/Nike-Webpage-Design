@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Review1</title>
+</head>
+<body>
+    <h2>CSS Syntax</h2>
+    <table border="1">
+        <tr>
+            <th>Syntax</th>
+            <th>Use</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Selector</td>
+            <td>ตัวที่กำหนดว่าโค้ด css ต่อจากนี้จะถูกใช้งานในส่วนไหนของไฟล์htmlบ้าง</td>
+            <td> .div #id </td>
+        </tr>
+        <tr>
+            <td>Property</td>
+            <td>กำหนดpropertyของselectorนั้น เช่นเลือกสีเลือกไซส์เลือกรูปแบบ</td>
+            <td>color: font-size:</td>
+        </tr>
+        <tr>
+            <td>Value</td>
+            <td>ค่าของpropertyที่ถูกกำหนดโดยvalueนั้นจะมีแบบที่ต่างกันbased on property</td>
+            <td>color:<b>Black</b> font-size:<b>12px</b></td>
+        </tr>
+    </table>
+    <h2>การใช้ CSS ในแบบต่างๆ</h2>
+    <table border="1">
+        <tr>
+            <th>แบบ</th>
+            <th>Explanation</th>
+        </tr>
+        <tr>
+            <td>เขียนในHtml file</td>
+            <td>เขียนcss style ในfile htmlเลยโดยไม่มีความจำเป็นต้องมีreferenceไปที่ไฟล์css โดยปกติแล้วจะเขียน &ltstyle&gtcss&lt/style&gt ใน headของhtml</td>
+        </tr>
+        <tr>
+            <td>เขียนในCss file</td>
+            <td>สร้างfile.cssขึ้นมาและเขียนโค้ดลงไปในนั้น โดยต้องทำการเชื่อมกับhtml fileโดยใช้ src hrefไปที่ไฟล์.cssที่มี</td>
+        </tr>
+    </table>
+    <h2>Selectors</h2>
+    <table border="1">
+        <tr>
+            <th>selectors</th>
+            <th>use</th>
+        </tr>
+        <tr>
+            <td>.class</td>
+            <td>เลือกเฉพาะclassนั้นๆ โดยแต่ละคลาสสามารถมีได้หลายส่วน</td>
+        </tr>
+        <tr>
+            <td>#id</td>
+            <td>เลือกเฉพาะidนั้นๆ แต่idนั้นจะได้เฉพาะส่วนๆเดียว</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>เลือกelementทั้งหมด</td>
+        </tr>
+        <tr>
+            <td>element</td>
+            <td>เลือกเฉพาะelement เช่น div หรือ h1</td>
+        </tr>
+        <tr>
+            <td>element, element</td>
+            <td>เลือกหลายๆelement เช่น div, h1, h2</td>
+        </tr>
+    </table>
+    <h2>Combinators</h2>
+    <table border="1">
+        <tr>
+            <th>Combinator</th>
+            <th>use</th>
+        </tr>
+        <tr>
+            <td>element1 element2</td>
+            <td>เลือกelement1ทั้งหมกที่อยู่ในelement2</td>
+        </tr>
+        <tr>
+            <td>element1 > element2</td>
+            <td>เลือกelement1ทั้งหมดที่เป็น child ของ element2</td>
+        </tr>
+        <tr>
+            <td>element1 + element2</td>
+            <td>เลือกelement1ที่ต่อจากelement2</td>
+        </tr>
+        <tr>
+            <td>element1 ~ element2</td>
+            <td>เลือกประเภทelement1ทั้งหมกที่ตามหลังelement2</td>
+        </tr>
+    </table>
+    <h1>Property and Value</h1>
+    <h2>Property vs Value</h2>
+    <p>Property นั้นเป็นตัวบอกค่าที่จะเซ็ทให้กับelement เช่นสีหรือไซส์ ส่วนตัวvalueนั้นเป็นตัวกำหนดว่าค่าต่างๆจะมีค่าเท่าไหร่่เช่นให้สีเป็นสีดำ หรือให้ไซส์เท่ากับ20pt</p>
+    <h2>Property Groups</h2>
+    <table>
+        <tr>
+            <th>Property Groups</th>
+            <th>Use</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
