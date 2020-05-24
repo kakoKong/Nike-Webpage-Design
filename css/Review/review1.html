@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Review1</title>
+
 </head>
 <body>
+    <h1 style="text-align: center;">Review 1</h1>
     <h2>CSS Syntax</h2>
     <table border="1">
         <tr>
@@ -94,7 +96,7 @@
             <td>เลือกประเภทelement1ทั้งหมกที่ตามหลังelement2</td>
         </tr>
     </table>
-    <h1>Property and Value</h1>
+    <h1 style="text-align: center;">Review 2</h1>
     <h2>Property vs Value</h2>
     <p>Property นั้นเป็นตัวบอกค่าที่จะเซ็ทให้กับelement เช่นสีหรือไซส์ ส่วนตัวvalueนั้นเป็นตัวกำหนดว่าค่าต่างๆจะมีค่าเท่าไหร่่เช่นให้สีเป็นสีดำ หรือให้ไซส์เท่ากับ20pt</p>
     <h2>Property Groups</h2>
@@ -221,7 +223,99 @@
             <td>%</td>
             <td>Relative to parents element</td>
         </tr>
-
     </table>
+    <h1 style="text-align: center;">Review 3</h1>
+    <h2>Display's value</h2>
+    <table  border="1">
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>inline</td>
+            <td>elementจะไม่ขึ้นบรรทัดใหม่</td>
+        </tr>
+        <tr>
+            <td>block</td>
+            <td>elementจะขึ้นบรรทัดใหม่</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>เปลี่ยนให้container หายไปและโชว์แค่ตัวchild element</td>
+        </tr>
+        <tr>
+            <td>flex</td>
+            <td>โชว์ element แบบ flex-block</td>
+        </tr>
+        <tr>
+            <td>grid</td>
+            <td>โชว์ element แบบ grid-block</td>
+        </tr>
+        <tr>
+            <td>table</td>
+            <td>แสดง element แบบ table</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>ไม่แสดงelementนั้น</td>
+        </tr>
+    </table>
+    <h2 style="text-align: center;">Grid vs Flex</h2>
+    <table align="center" border="1">
+        <tr>
+            <th><h2>Grid</h2></th>
+            <th><h2>Flex</h2></th>
+        </tr>
+        <tr>
+            <td>สามารถ กำหนด gap ได้</td>
+            <td>ไม่สามารถ กำหนด gap</td>
+        </tr>
+        <tr>
+            <td>container based</td>
+            <td>context based</td>
+        </tr>
+     
+    </table>
+    <h2 style="text-align: center;">Justify vs align</h2>
+    <table align="center" border="1">
+        <tr>
+            <th><h2>Justify</h2></th>
+            <th><h2>Align</h2></th>
+        </tr>
+        <tr>
+            <td>effect main axis</td>
+            <td>effect cross axis</td>
+        </tr>
+    </table>
+    <h2 style="text-align: center;">Position</h2>
+    <table align="center" border="1">
+        <tr>
+            <th><h2>Position</h2></th>
+            <th><h2>Description</h2></th>
+        </tr>
+        <tr>
+            <td>Static</td>
+            <td>ตั้งค่าเริ่มต้น(defult)ของelement's position</td>
+        </tr>
+        <tr>
+            <td>Absolute</td>
+            <td>positionจะขึ้นอยู่กับ(relative to)positionแรกของตัวelement</td>
+        </tr>
+        <tr>
+            <td>Fixed</td>
+            <td>positionจะขึ้นกับตัวbrowser</td>
+        </tr>
+        <tr>
+            <td>Relative</td>
+            <td>positionจะขึ้นอยู่กับ(relative to)positionปกติของตัวelement</td>
+        </tr>
+        <tr>
+            <td>Sticky</td>
+            <td>กึ่งๆระหว่างrelative กับ fixed โดยจะเห็นชัดเมื่อใช้เมาส์scroll</td>
+        </tr>
+    </table>
+    <h2>What is z-index</h2>
+    <p> Z index เป็นตัวระบุว่าelementไหนจะอยู่หน้าelementไหนโดยค่าdefultของมันคือ0 โดยหากต้องการให้elementไปข้างหน้าให้เรับไปทาง(+) หากต้องการให้ไปข้างหลังให้ปรับไปทาง(-)</p>
+
 </body>
 </html>
