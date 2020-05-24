@@ -10,8 +10,11 @@
           position: relative;
           display: inline-block;
           background-color: yellow;
-          border: 1pt dotted;
-          border-radius: 10%; /* If you want dots under the hoverable text */
+          border: 1pt solid black;
+          border-radius: 30%; /* If you want dots under the hoverable text */
+        }
+        .tooltip:hover{
+            background-color: rgb(255, 187, 0);
         }
         
         /* Tooltip text */
@@ -38,13 +41,13 @@
                 position: absolute;
                 left: 100px;
                 top: 150px;
-
         }
         h2{
+            text-indent: 10pt;
+            border-top: 2px solid rgb(136, 136, 136);
             background-color: rgb(185, 185, 185);
             padding-top: 5pt;
             padding-bottom: 5pt;
-            border: 1pt black;
             color: rgb(104, 104, 104);
         }
         .must{
@@ -57,6 +60,15 @@
             display: inline;
             position: absolute;
             left: 100pt;
+        }
+        select{
+            width: 110pt;
+        }
+        br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 24%;
         }
         </style>
 </head>
@@ -94,38 +106,50 @@
         </div>
         <br>
         <label> Logo : </label>
-        <input type="file" name="logo">
+        <div class="inputpos">
+            <input type="file" name="logo">
+        </div>
         <br>
         <labeL> Template Text : </labeL>
-        <select id="text" name="text">
-            <option value="en">English</option>
-            <option value="th">Thai</option>
-            <option value="jp">Japanese</option>
-        </select>
-        <input type="button" value="edit">
+        <div class="inputpos">
+            <select id="text" name="text">
+                <option value="en">English</option>
+                <option value="th">Thai</option>
+                <option value="jp">Japanese</option>
+            </select>
+            <input type="button" value="edit">
+        </div>
         <br>
         <labeL> Review Form : </labeL>
-        <select id="revform" name="revform">
-            <option value="def">Defult</option>
-            <option value="cus">Custom</option>
-        </select>
+        <div class="inputpos">
+        	<select id="revform" name="revform">
+        	    <option value="def">Defult</option>
+        	    <option value="cus">Custom</option>
+        	</select>
+        </div>
         <br>
         <labeL> Review Score : </labeL>
-        <select id="revscr" name="revscr">
-            <option value="rate">Rating</option>
-            <option value="others">Others</option>
-        </select>
-        <input type="button" value="Reload Fields">
+        <div class="inputpos">
+            <select id="revscr" name="revscr">
+                <option value="rate">Rating</option>
+                <option value="others">Others</option>
+            </select>
+            <input type="button" value="Reload Fields">
+        </div>
         <br>
         <labeL> Scoring Type : </labeL>
-        <select id="scrt" name="scrt">
-            <option value="ave">Average</option>
-            <option value="high">Highest</option>
-            <option value="total">Total</option>
-        </select>
+        <div class="inputpos">
+            <select id="scrt" name="scrt">
+                <option value="ave">Average</option>
+                <option value="high">Highest</option>
+                <option value="total">Total</option>
+            </select>
+        </div>
         <br>
         <label>Max Score</label>
-        <input type="text" name="maxscore" value="4.00">
+        <div class="inputpos">
+            <input type="text" name="maxscore" value="4.00">
+        </div>
     </form>
 </body>
 </html>
