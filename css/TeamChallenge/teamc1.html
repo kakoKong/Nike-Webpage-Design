@@ -4,8 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Challenge Form</title>
+    <style>
+        /* Tooltip container */
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          background-color: yellow;
+          border: 1pt dotted;
+          border-radius: 10%; /* If you want dots under the hoverable text */
+        }
+        
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 150px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          padding: 5px 0;
+          border-radius: 6px;
+         
+          /* Position the tooltip text - see examples below! */
+          position: absolute;
+          left: 10px;
+          z-index: 1;
+        }
+        
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+        .input{
+                position: absolute;
+                left: 100px;
+                top: 150px;
+
+        }
+        h2{
+            background-color: rgb(185, 185, 185);
+            padding-top: 5pt;
+            padding-bottom: 5pt;
+            border: 1pt black;
+            color: rgb(104, 104, 104);
+        }
+        .must{
+            color: red;
+            position: relative;
+            bottom: 2pt;
+            font-size: 70%;
+        }
+        .inputpos{
+            display: inline;
+            position: absolute;
+            left: 100pt;
+        }
+        </style>
 </head>
 <body>
-    
+    <form>
+        <div class="formm">
+        <label>Name <span class="must">*</span> :</label>
+        <div class="inputpos">
+        <input type="text">
+        <div class="tooltip">?
+            <span class="tooltiptext">Write your name here</span>
+        </div>
+        </div>
+
+        <br>
+        <label>Tab text <span class="must">*</span> :</label>
+        <div class="inputpos">
+        <input type="text">
+        <div class="tooltip">?
+            <span class="tooltiptext">Write your name here</span>
+        </div>
+        </div>
+        <br>
+        <label>URL <span class="must">*</span> :</label><div class="inputpos">
+        http://www.wizehive.com/webform/<input type="text">
+        </div>
+        </div>
+    </form>
+    <h2>From Setup</h2>
+    <form class="formset">
+        <labeL>Form : </labeL>
+        <div class="inputpos">
+            <input type="text" name="form" placeholder="Nongkong">
+            <input type="button" value="edit">
+        </div>
+        <br>
+        <label> Logo : </label>
+        <input type="file" name="logo">
+        <br>
+        <labeL> Template Text : </labeL>
+        <select id="text" name="text">
+            <option value="en">English</option>
+            <option value="th">Thai</option>
+            <option value="jp">Japanese</option>
+        </select>
+        <input type="button" value="edit">
+        <br>
+        <labeL> Review Form : </labeL>
+        <select id="revform" name="revform">
+            <option value="def">Defult</option>
+            <option value="cus">Custom</option>
+        </select>
+        <br>
+        <labeL> Review Score : </labeL>
+        <select id="revscr" name="revscr">
+            <option value="rate">Rating</option>
+            <option value="others">Others</option>
+        </select>
+        <input type="button" value="Reload Fields">
+        <br>
+        <labeL> Scoring Type : </labeL>
+        <select id="scrt" name="scrt">
+            <option value="ave">Average</option>
+            <option value="high">Highest</option>
+            <option value="total">Total</option>
+        </select>
+        <br>
+        <label>Max Score</label>
+        <input type="text" name="maxscore" value="4.00">
+    </form>
 </body>
 </html>
