@@ -20,7 +20,6 @@
 }
 .TopHeader li:hover{
     color: black;
-    font: bold;
 }
 .TopHeader img{
     height: 15pt;   
@@ -60,13 +59,10 @@
     padding-right: 20pt;
 }
 .Menu form input{
-    border: 1px solid rgb(0, 0, 0);
     width: 150px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ccc;
     font-size: 16px;
-    background-image: url("src/search.png");
     background-color: white;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 10px;
@@ -75,6 +71,7 @@
 }
 .Menu li:hover{
     border-bottom: 2pt solid black;
+    font-weight: bolder;
 }
 .covid{
     text-align: center;
@@ -120,6 +117,7 @@
     margin-left: 50pt;
     margin-right: 50pt;
 }
+
 .news .image{
     display: flex;
     justify-content: center;
@@ -161,6 +159,9 @@ button:hover{
     margin-left: 50pt;
     margin-right: 50pt;
 }
+.showroom h2{
+    color: grey;
+}
 .catalog{
     display: flex;
 }
@@ -172,6 +173,9 @@ button:hover{
     height: 400px;
     
     /* border: 1pt solid black; */
+}
+.catalog .item img:hover{
+    opacity: 70%;
 }
 .catalog .item span.name, span.price{
     /* border: 1pt solid black; */
@@ -215,7 +219,7 @@ button:hover{
 }
 .combo{
     position: relative;
-    bottom: 30%;
+    bottom: 20%;
     left: 5%;
     color: white;
 }
@@ -223,9 +227,9 @@ button:hover{
     font-size: 20pt;
 }
 .combo > button{
-    width: 100pt;
+    width: auto;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(80, 80, 80);
     font-size: 16px;
     padding: 12px 24px;
     border: none;
@@ -233,3 +237,49 @@ button:hover{
     border-radius: 30px;
     z-index: 2;
   }
+.show2{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 1;
+}
+.item{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0px;
+}
+.show2 .item img{
+    /* display: none; */
+    
+    width: 100%;
+    height: 550px;
+    padding-bottom: 0px;
+    z-index: -1;
+}
+.othercat{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40pt;
+}
+.othercat p{
+    color: grey;
+}
+.othercat p:hover{
+    color: black;
+}
+.footer{
+    font-size: 10pt;
+    padding: 35pt;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+.footer .row1{
+    justify-self: start;
+}
+.footer .row1 p{
+    color: grey;
+}
+.footer .row1 p:hover{
+    color: white;
+}
