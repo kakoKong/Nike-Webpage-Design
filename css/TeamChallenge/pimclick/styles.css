@@ -1,0 +1,111 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head{
+    margin-top: -50px;
+    text-align: center;
+    background-color: rgb(241, 114, 114);
+    height: 600px;
+    color: white;
+}
+.head span{
+    font-size: 25px;
+    margin-top: 10px;
+    padding-top: 30px;
+}
+.head h1{
+    padding-top:3%;
+    font-size: 500%;
+    font-weight: 650;
+}
+.head h2{
+    font-weight: 100;
+    font-size: 400%;
+}
+.form h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 400%;
+}
+.form span{
+    color: red;
+}
+.form{
+    border-radius: 25px;
+    padding-top: 1%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    margin-top: -15%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    height: auto;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.form h2{
+    font-weight: 100;
+    font-size: 300%;
+}
+.form li{
+    /* border: 1px solid black;    */
+    padding-right: 0%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 5%;
+}
+form .name{
+    flex: 40%;
+    padding-right:2em;
+}
+form .mail{
+    flex: 40%;
+    padding-left:2em;
+}
+form .subject{
+    padding-top: 1em;
+    flex: 100%;
+}
+form .message{
+    flex: 100%;
+    padding-top: 1em;
+}
+.message > input[type=text]{
+    height: 200px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 20px 0px;
+    /* margin: 8px -3px; */
+  }
+  input[type=submit] {
+    background-color: rgb(194, 4, 4);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10%;
+    cursor: pointer;
+    float: right;
+    width: 200px;
+    font-size: 200%;
+  }
+  .content{
+    border-radius: 25px;
+    padding-top: 1%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    height: auto;
+    padding-bottom: 10px;
+}
+.content p{
+    font-size: 20pt;
+    font-weight: 100;
+    color: rgb(124, 124, 124);
+}
