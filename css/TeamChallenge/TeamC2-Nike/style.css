@@ -1,0 +1,235 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.TopHeader{
+    color: rgb(121, 121, 121);
+    border-bottom: 1pt solid rgb(187, 187, 187);
+    height: 22pt;
+    
+}
+.TopHeader ul{
+    list-style: none;
+    display: flex;
+}
+.TopHeader li{
+    font-size: 9pt;
+    border-right: 1pt solid rgb(173, 173, 173);
+    padding-top: 5pt;
+    padding-right: 15pt;
+    padding-left: 15pt;  
+}
+.TopHeader li:hover{
+    color: black;
+    font: bold;
+}
+.TopHeader img{
+    height: 15pt;   
+}
+.TopHeader img:hover{
+    color: brown;
+}
+.TopHeader li:nth-child(3) {
+    margin-left: auto;
+  }
+
+.Menu{
+    color: rgb(70, 70, 70);
+    border-bottom: 1pt solid rgb(187, 187, 187);
+    height: 50pt;
+}
+.Menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.Menu img{
+    height: 40pt;
+    margin-right: auto;
+    
+}
+.Menu li{
+    height: 29pt;
+    padding: 20pt;
+    text-align: center;
+    font-size: 11pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+.Menu form{
+    margin-left: auto;
+    padding-right: 20pt;
+}
+.Menu form input{
+    border: 1px solid rgb(0, 0, 0);
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url("src/search.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+    transition: width 0.4s ease-in-out;
+
+}
+.Menu li:hover{
+    border-bottom: 2pt solid black;
+}
+.covid{
+    text-align: center;
+    color: rgb(90, 90, 90);
+    background-color: rgb(231, 231, 231);
+    border-bottom: 1pt solid rgb(199, 199, 199);
+    font-size: 10pt;
+    padding: 5pt;
+}
+.covid a{
+    color: rgb(119, 119, 119);
+}
+.mensmn{
+    display: flex;
+    justify-content: start;
+    padding: 10pt;
+}
+.mensmn h2{
+    margin-left: 40pt;
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+.mensmn ul{
+    flex-grow: 1;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 90pt;
+    display: flex;
+    list-style: none;
+}
+.mensmn li{
+    padding: 10pt;
+}
+.mensmn a{
+    text-decoration: none;
+    color: grey;
+}
+.mensmn li a:hover{
+    color: rgb(48, 48, 48);
+}
+.news {
+    position: relative;
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+.news .image{
+    display: flex;
+    justify-content: center;
+    height: 400pt;
+}
+.news .image .newsh{
+    width: 70%;
+}
+.news .image .wearsh{
+    width: 30%;
+}
+.news p{
+    margin-top: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font:bold;
+    position: absolute;
+    left: 3%;
+    font-size: 50pt;
+    color: white;
+}
+.news button{
+        position: absolute;
+        top: 38%;
+        left: 3%;
+        width: 100pt;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        z-index: 1;
+      }
+button:hover{
+    opacity: 0.7;
+}
+.showroom{
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+.catalog{
+    display: flex;
+}
+.item{
+    margin-right: 10pt;
+}
+.catalog .item img{
+    width: 400px;
+    height: 400px;
+    
+    /* border: 1pt solid black; */
+}
+.catalog .item span.name, span.price{
+    /* border: 1pt solid black; */
+    display: inline-block;
+    text-align: center;
+    margin-top: -10pt;
+    margin-bottom: -10pt;
+    font-size: 15pt;
+}
+.catalog .item span.price{
+    margin-right: 40pt;
+    float: right;
+    font-weight: bold;
+}
+.catalog .item span.cat{
+    color: grey;
+    padding: 0;
+}
+.hot{
+    margin-left: 50pt;
+    margin-right: 50pt;
+    color: grey;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    flex: 1 1;
+}
+.item{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0px;
+}
+.show .item img{
+    /* display: none; */
+    
+    width: 100%;
+    height: 700px;
+    padding: 0px;
+    z-index: -1;
+}
+.combo{
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+    color: white;
+}
+.combo p{
+    font-size: 20pt;
+}
+.combo > button{
+    width: 100pt;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    z-index: 2;
+  }
