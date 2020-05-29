@@ -1,6 +1,67 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+@media only screen and (max-width: 800px) {
+    .head{
+        height: 300px;
+        margin-top: -50px;
+        text-align: center;
+        background-color: rgb(241, 114, 114);
+        color: white;
+    }
+    .head span{
+        font-size: 15px;
+        margin-top: 10px;
+        padding-top: 30px;
+    }
+    .head h1{
+        padding-top:10%;
+        font-size: 300%;
+        font-weight: 650;
+    }
+    .head h2{
+        font-weight: 100;
+        font-size: 200%;
+    }
+    .form{
+        color: rgb(158, 158, 158);
+        font-weight: 100;
+        border-radius: 25px;
+        padding-top: 1%;
+        text-align: left;
+        background-color: rgb(255, 255, 255);
+        margin-top: -20%;
+        margin-left: 10%;
+        margin-right: 10%; 
+        height: auto;
+        padding-bottom: 10px;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 10%;
+    }
+    form .name{
+        flex: 100%;
+        /* padding-right:2em; */
+    }
+    form .mail{
+        flex: 100%;
+        /* padding-left:2em; */
+    }
+    .message > input[type=text]{
+        height: 100px;
+    }
+    .form h2{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 200%;
+    }
+}
+@media only screen and (min-width: 800px){
 .head{
     margin-top: -50px;
     text-align: center;
@@ -8,6 +69,7 @@
     height: 600px;
     color: white;
 }
+
 .head span{
     font-size: 25px;
     margin-top: 10px;
@@ -22,15 +84,9 @@
     font-weight: 100;
     font-size: 400%;
 }
-.form h2{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 400%;
-}
-.form span{
-    color: red;
-}
 .form{
+    color: rgb(158, 158, 158);
+    font-weight: 100;
     border-radius: 25px;
     padding-top: 1%;
     text-align: left;
@@ -41,14 +97,6 @@
     height: auto;
     padding-bottom: 10px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
-}
-.form h2{
-    font-weight: 100;
-    font-size: 300%;
-}
-.form li{
-    /* border: 1px solid black;    */
-    padding-right: 0%;
 }
 ul{
     list-style: none;
@@ -65,6 +113,22 @@ form .mail{
     flex: 40%;
     padding-left:2em;
 }
+.message > input[type=text]{
+    height: 200px;
+}
+.form h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 500%;
+}
+}
+
+.form span{
+    color: red;
+}
+
+
+
 form .subject{
     padding-top: 1em;
     flex: 100%;
@@ -73,9 +137,7 @@ form .message{
     flex: 100%;
     padding-top: 1em;
 }
-.message > input[type=text]{
-    height: 200px;
-}
+
 input[type=text] {
     width: 100%;
     padding: 20px 0px;
