@@ -1,0 +1,41 @@
+.article{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    flex:33%;
+    padding: 20px;
+}
+/* Phone */
+@media only screen and (max-width:600px){
+    .main h1{font-size: 20px; color: black;text-align: center;}
+    .article{
+        flex-direction: column-reverse;
+    }
+    img{
+        width: 100%;
+    }
+}
+/* tablet */
+@media only screen and (min-width:1000px){
+    .main h1{font-size: 40px; color: rgb(158, 158, 158);text-align: center;}
+    .item{
+        /* width: 40%; */
+        background-color: antiquewhite;
+        flex: 40%;
+    }
+    img{
+        width: 100%;
+    }
+}
+/* desktop */
+@media only screen and (min-width:1200px){
+    .main h1{font-size: 50px; color: rgb(167, 0, 0);text-align: center;}
+    .item{
+        background-color: aqua;
+        flex: 30%;
+    }
+    img{
+        width: 100%;
+    }
+}
